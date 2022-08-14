@@ -1,0 +1,8 @@
+<hr />
+<app-shopping-edit></app-shopping-edit>
+
+<hr />
+<div *ngFor="let item of ingredients" class="box">
+  <div class="item left">{{ item.name }}</div>
+  <div class="item">{{ item.amount }}</div>
+</div>

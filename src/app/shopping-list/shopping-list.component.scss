@@ -1,0 +1,23 @@
+$primary-color: #2e382eff;
+$primary-active-color: #72a1e5ff;
+
+.box {
+  border: 2px none $primary-color;
+  border-style: none dashed;
+  padding: 10px 30px;
+  margin: 20px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+
+  .item {
+    margin: auto;
+    color: $primary-color;
+    font-weight: 200px;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .left {
+    text-decoration: underline $primary-active-color solid 2px;
+  }
+}

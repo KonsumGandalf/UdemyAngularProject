@@ -1,0 +1,38 @@
+$border-color: #2e382eff;
+$primary-active-color: #72a1e5ff;
+$primary-font-color: white;
+
+.box {
+  background-color: $border-color;
+  padding: 10px 30px;
+  margin: 20px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.left {
+
+  font-family: 'Courier New', Courier, monospace;
+  color: $primary-font-color;
+  padding: 4px 10px;
+  h4 {
+    font-weight:  400px;
+    text-decoration: overline $primary-active-color dashed 2px;
+  }
+  p {
+    border-left: 2px dashed $primary-active-color;
+    height: 50%;
+    padding: 4px 10px;
+  }
+}
+
+.right {
+  border: 2px solid $border-color;
+  img {
+    display: block;
+    margin: auto;
+    height: 200px;
+  }
+}
+

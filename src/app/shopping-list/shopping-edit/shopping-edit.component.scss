@@ -1,0 +1,36 @@
+$btn-primary-color: black;
+$btn-second-color: whitesmoke;
+$lavender-blue-2: #bbd0ffff;
+$primary-active-color: #72a1e5ff;
+
+.box {
+  display: inline-flex;
+  padding: 10px 30px;
+
+  border: 3px solid $btn-primary-color;
+  input {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid $btn-primary-color;
+    outline: 0;
+    font-size: 1.1rem;
+    color: $btn-primary-color;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+}
+
+button {
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  background-color: $btn-second-color;
+  border: 3px solid $btn-primary-color;
+  letter-spacing: 2px;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 10px;
+}
