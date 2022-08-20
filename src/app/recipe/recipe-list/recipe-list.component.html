@@ -1,9 +1,8 @@
 <div>
   <li *ngFor="let item of recipes">
     <app-recipe-item
-      [name]="item.name"
-      [description]="item.description"
-      [imgPath]="item.imgPath"
-    ></app-recipe-item>
+      [recipe]="item"
+      (recipeSelected)="onRecipeSelected(item)">
+    </app-recipe-item>
   </li>
 </div>

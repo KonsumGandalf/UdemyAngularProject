@@ -12,4 +12,8 @@ export class ShoppingEditComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  debuggAction(idx: number): void{
+    console.log("action: " + idx);
+  }
+
 }

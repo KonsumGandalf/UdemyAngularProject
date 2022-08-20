@@ -18,6 +18,7 @@ export class ShoppingListComponent implements OnInit {
   }
 
   addItem(newIngredient: Ingredient): void {
+    console.log(newIngredient);
     this.ingredients  = [...this.ingredients, newIngredient];
   }
 

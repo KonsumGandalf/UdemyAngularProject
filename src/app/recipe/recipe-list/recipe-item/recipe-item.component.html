@@ -1,12 +1,12 @@
-<div class="box">
+<div class="box" (click)="onRecipeSelected()">
   <div class="left">
-    <h4 class="list-group-item-heading">{{ name }}</h4>
-    <p class="list-group-item-text">{{ description }}</p>
+    <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+    <p class="list-group-item-text">{{ recipe.description }}</p>
   </div>
   <div class="right">
     <img
-      [src]="imgPath"
-      alt="{{ name }}">
+      [src]="recipe.imgPath"
+      alt="{{ recipe.name }}">
     </div>
 </div>
 

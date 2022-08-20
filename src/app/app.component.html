@@ -1,3 +1,5 @@
-<app-header></app-header>
-<app-recipe></app-recipe>
-<app-shopping-list></app-shopping-list>
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+<div *ngIf="loadedFeature === 'recipe'; then recipeBlock else shoppingBlock"> </div>
+<ng-template #recipeBlock><app-recipe></app-recipe></ng-template>
+<ng-template #shoppingBlock><app-shopping-list></app-shopping-list></ng-template>
+
