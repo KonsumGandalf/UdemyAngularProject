@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DropdownDirective } from './shared/dropdown.directive';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { HeaderComponent } from './header/header.component';
 import { recipeComponent } from './recipe/recipe.component';
@@ -20,7 +21,8 @@ import { RecipeListComponent } from './recipe/recipe-list/recipe-list.component'
     recipeDetailComponent,
     recipeItemComponent,
     ShoppingEditComponent,
-    RecipeListComponent
+    RecipeListComponent,
+    DropdownDirective,
   ],
   imports: [
     BrowserModule,
